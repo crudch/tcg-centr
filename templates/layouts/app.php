@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <?php echo $this->renderBlock('style') ?>
 </head>
-<body class="background__on">
+<body <?php if(empty(request()->uri())) : ?>class="background__on"<?php endif; ?>>
 <main class="main">
-    <section id="navigation" class="white navigation">
+    <section id="navigation" class="<?php echo empty(request()->uri()) ? 'white': 'black'; ?> navigation">
         <header class="navigation__header">
             <a href="/">
                 <h1>ТСЖ "Центральное"</h1>
@@ -20,37 +20,12 @@
             </a>
             <p>Екатеринбург, 8 Марта, 7</p>
         </header>
-        <nav class="navigation__menu">
-            <ul class="navigation__list">
-                <li><a class="navigation__news" href="/news/news.php">Новости</a></li>
-                <li><a class="navigation__homeowners" href="/homeowners/homeowners.php">Наше ТСЖ</a></li>
-                <li><a class="navigation__manual" href="/">Справочник</a></li>
-                <li><a class="navigation__counters" href="/">Счётчики</a></li>
-                <li><a class="navigation__payment" href="/">Оплата</a></li>
-                <li><a class="navigation__rate" href="/">Тарифы</a></li>
-                <li><a class="navigation__report" href="/report/report.php">Отчётность</a></li>
-                <li><a class="navigation__gallery" href="/gallery/gallery.php">Галерея</a></li>
-            </ul>
-        </nav>
+        <?php require __DIR__ . '/nav.php'; ?>
         <footer class="navigation__footer">
             <p>ТСЖ "Центральное" 2008-<?php echo date('Y'); ?></p>
         </footer>
     </section>
-    <section id="primary" class="primary">
-        <div class="primary__clear">
-        </div>
-        <footer id="primary__footer" class="primary__footer">
-            <div class="primary__header">
-                <h3>Товарищество собственников жилья "Центральное"</h3>
-                <p>Екатеринбург, 8 Марта, 7</p>
-            </div>
-            <div class="primary__news">
-                <p><span>24 мая 2019</span></p>
-                <h3>Установка дефлекторов на вентиляцию</h3>
-                <p>соседи! В нашем доме проводятся работы по установке дефлекторов на вентиляционные...</p>
-            </div>
-        </footer>
-    </section>
+    <?php echo $this->renderBlock('content') ?>
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <?php echo $this->renderBlock('script') ?>
