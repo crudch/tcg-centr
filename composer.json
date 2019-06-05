@@ -1,0 +1,36 @@
+{
+  "name": "crudch/tcg-centr",
+  "license": "MIT",
+  "description": "Application tcg-centr",
+  "require": {
+    "php": "^7.3",
+    "ext-ctype": "*",
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "ext-openssl": "*",
+    "ext-pdo": "*",
+    "crudch/framework": "dev-master"
+  },
+  "require-dev": {},
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/crudch/framework"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": []
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

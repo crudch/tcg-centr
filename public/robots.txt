@@ -1,0 +1,5 @@
+User-agent : *
+Disallow : /test
+
+Crawl-delay: 10
+Host: http://example.ru
