@@ -1,3 +1,14 @@
+<?php
+$body = '';
+$color = 'black';
+$logo = '/img/logo-inverse.png';
+
+if (empty(request()->uri())) {
+    $body = 'background__on';
+    $color = 'white';
+    $logo = '/img/logo.png';
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -10,13 +21,13 @@
     <link rel="stylesheet" href="/css/style.css">
     <?php echo $this->renderBlock('style') ?>
 </head>
-<body <?php if(empty(request()->uri())) : ?>class="background__on"<?php endif; ?>>
+<body class="<?php echo $body; ?>">
 <main class="main">
-    <section id="navigation" class="<?php echo empty(request()->uri()) ? 'white': 'black'; ?> navigation">
+    <section id="navigation" class="<?php echo $color; ?> navigation">
         <header class="navigation__header">
             <a href="/">
                 <h1>ТСЖ "Центральное"</h1>
-                <img src="/img/logo.png" class="navigation__logo" alt="">
+                <img src="<?php echo $logo; ?>" class="navigation__logo" alt="">
             </a>
             <p>Екатеринбург, 8 Марта, 7</p>
         </header>
