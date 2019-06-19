@@ -9,26 +9,22 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <style>
         @media only screen and (max-width: 1200px) {
-            .navigation {
-                position: fixed;
-                z-index: 1;
-                transform: translateX(-300px) translateY(0) translateZ(0);
-                transition-duration: 500ms;
-                width: 300px;
+            .navigation__menu a {
+                padding: 15px;
+                border-bottom: solid 1px #000;
             }
         }
     </style>
     <link rel="stylesheet" href="/css/style.css">
     <?php echo $this->renderBlock('style') ?>
 </head>
-<body>
+<body class="background__on">
 <main class="main">
-    <a href="/" class="toggle"></a>
-    <section id="navigation" class="black navigation">
+    <section id="navigation" class="white navigation">
         <header class="navigation__header">
             <a href="/">
                 <h1>ТСЖ "Центральное"</h1>
-                <img src="/img/logo-inverse.png" class="navigation__logo" alt="">
+                <img src="/img/logo.png" class="navigation__logo" alt="">
             </a>
             <p>Екатеринбург, 8 Марта, 7</p>
         </header>
@@ -40,15 +36,6 @@
     <?php echo $this->renderBlock('content') ?>
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-  $('.toggle').on('click', function (e) {
-    e.preventDefault();
-    $(this).toggleClass('toggle--close').
-      next().toggleClass('translate1').
-      next().toggleClass('translate2').
-      addClass('translate1');
-  });
-</script>
 <?php echo $this->renderBlock('script') ?>
 </body>
 </html>

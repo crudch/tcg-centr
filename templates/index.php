@@ -5,7 +5,7 @@
  */
 ?>
 
-<?php $this->extend('layouts/app'); ?>
+<?php $this->extend('layouts/index'); ?>
 
 <?php $this->start('title'); ?>ТСЖ «Центральное»<?php $this->stop(); ?>
 <?php $this->start('description'); ?>Официальный сайт ТСЖ «Центральное»<?php $this->stop(); ?>

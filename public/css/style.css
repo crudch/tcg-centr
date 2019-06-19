@@ -1461,19 +1461,6 @@ table th {
         display: block;
     }
 
-    /*.navigation__menu a {
-        padding: 15px;
-        border-bottom: solid 1px #000;
-    }*/
-
-    .navigation {
-        position: fixed;
-        z-index: 1;
-        transform: translateX(-300px) translateY(0) translateZ(0);
-        transition-duration: 500ms;
-        width: 300px;
-    }
-
     .translate1 {
         transform: translateX(0) translateY(0) translateZ(0);
         transition-duration: 500ms;
