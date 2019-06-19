@@ -17,8 +17,7 @@ return [
     'url' => 'http://tcg-centr',
 	
     /**
-     * Использовать HTTPS в куках
-     */
+     * Использовать HTTPS в  
     'secure' => false,
 
     /**
