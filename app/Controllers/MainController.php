@@ -7,6 +7,9 @@ use Crudch\Foundation\Controller;
 
 class MainController extends Controller
 {
+    /**
+     * Главная страница
+     */
     public function index()
     {
         $article = remember('last_news', function () {
@@ -16,33 +19,43 @@ class MainController extends Controller
         return view('index', compact('article'));
     }
 
-    public function home()
+    /**
+     * Наше ТСЖ
+     */
+    public function homeowners()
     {
-        return view('home');
+        return view('homeowners');
     }
 
+    /**
+     * Услуги
+     */
+    public function services()
+    {
+        return view('services');
+    }
+
+    /**
+     * Отчетность
+     */
+    public function report()
+    {
+        return view('report');
+    }
+
+    /**
+     * Справочник
+     */
     public function manual()
     {
         return view('manual');
     }
 
-    public function counters()
+    /**
+     * Полезное
+     */
+    public function helpful()
     {
-        return view('counters');
-    }
-
-    public function payment()
-    {
-        return view('payment');
-    }
-
-    public function rate()
-    {
-        return view('rate');
-    }
-
-    public function report()
-    {
-        return view('report');
+        return view('helpful');
     }
 }

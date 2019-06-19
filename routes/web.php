@@ -9,26 +9,24 @@ use Crudch\Routing\Router;
 // Главная страница
 $route->get('/', 'MainController@index');
 
-//Новости
+// 1. Новости
 $route->group('/news', static function (Router $router) {
     $router->get('/', 'NewsController@index');
     $router->get('/{id:\d+}', 'NewsController@show');
 });
 
-// Наше ТСЖ
-$route->get('/homeowners', 'MainController@home');
-// Справочник
-$route->get('/manual', 'MainController@manual');
-// Счетчики
-$route->get('/counters', 'MainController@counters');
-// Оплата
-$route->get('/payment', 'MainController@payment');
-// Тарифы
-$route->get('/rate', 'MainController@rate');
-// Отчетность
+// 2. Наше ТСЖ
+$route->get('/homeowners', 'MainController@homeowners');
+// 3. Услуги
+$route->get('/services', 'MainController@services');
+// 4. Отчетность
 $route->get('/report', 'MainController@report');
+// 5. Справочник
+$route->get('/manual', 'MainController@manual');
+// 6. Полезное
+$route->get('/helpful', 'MainController@helpful');
 
-//Галерея
+// 7. Галерея
 $route->group('/gallery', static function (Router $router) {
     $router->get('/', 'GalleryController@index');
     $router->get('/{slug}', 'GalleryController@show');
