@@ -18,7 +18,6 @@
                 <h2><?php echo e($article->title); ?></h2>
                 <?php echo $article->body; ?>
             </div>
-            <a href="<?php echo url('/news'); ?>">Назад</a>
         </div>
     </section>
 <?php $this->stop(); ?>

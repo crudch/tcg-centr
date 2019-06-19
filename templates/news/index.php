@@ -2,6 +2,7 @@
 /**
  * @var \Crudch\View\View     $this
  * @var \App\Models\Article[] $news
+ * @var array                 $paginate
  */
 ?>
 
@@ -23,6 +24,20 @@
                     <p><?php echo e($article->subtitle); ?></p>
                 </div>
             <?php endforeach; ?>
+
+            <div class="news__pagination">
+                <?php if(false !== $key = array_search('previous', $paginate, true)) : ?>
+                    <a class="news__button news__button--preview" href="<?php echo url('/news?page=' . $key); ?>"></a>
+                <?php else : ?>
+                    <a class="news__button news__button--preview news__button--disabled" href="#"></a>
+                <?php endif; ?>
+                <?php if(false !== $key = array_search('next', $paginate, true)) : ?>
+                    <a class="news__button news__button--next" href="<?php echo url('/news?page=' . $key); ?>"></a>
+                <?php else : ?>
+                    <a class="news__button news__button--next news__button--disabled" href="#"></a>
+                <?php endif; ?>
+            </div>
+
         </div>
     </section>
 <?php $this->stop(); ?>

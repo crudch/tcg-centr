@@ -5,6 +5,7 @@ namespace App\Models;
 use Crudch\Database\Model;
 use Crudch\Date\CrutchDate;
 use Crudch\Database\ActiveRecord;
+use Kilte\Pagination\Pagination;
 
 /**
  * Class Article
@@ -37,6 +38,24 @@ class Article extends Model
 
         return db()->query($sql)
             ->fetchAll(\PDO::FETCH_CLASS, static::class);
+    }
+
+    public static function paginate($num)
+    {
+        $sql = 'select count(*) from articles where activity = 1';
+        if (!$count = db()->query($sql)->fetchColumn()) {
+            return [[], []];
+        }
+
+        $p = new Pagination($count, request()->get('page'), $num, 1);
+        $sql = 'select * from articles 
+            where activity = 1 
+        order by id desc limit '. $p->offset() . ', ' . (int)$num;
+
+        return [
+            db()->query($sql)->fetchAll(\PDO::FETCH_CLASS, static::class),
+            $p->build()
+        ];
     }
 
     public static function lastActive()

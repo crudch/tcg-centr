@@ -15,11 +15,9 @@ class NewsController extends Controller
 {
     public function index()
     {
-        $news = remember('news', function () {
-            return Article::active();
-        });
+        [$news, $paginate] = Article::paginate(3);
 
-        return view('/news/index', compact('news'));
+        return view('/news/index', compact('news', 'paginate'));
     }
 
     /**
