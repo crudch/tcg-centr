@@ -13,6 +13,7 @@
 <?php $this->start('content'); ?>
     <section id="gallery" class="gallery">
         <div class="gallery__block">
+            <h1>Галерея</h1>
             <?php foreach($gallery as $item) : ?>
                 <div class="gallery__item">
                     <a href="<?php echo url('/gallery/' . $item->slug); ?>">

@@ -21,7 +21,9 @@
             </div>
             <div class="primary__news">
                 <p><span><?php echo $article->datePublish(); ?></span></p>
-                <h3><?php echo $article->title; ?></h3>
+                <a href="<?php echo url('/news/' . $article->id); ?>">
+                    <h3><?php echo $article->title; ?></h3>
+                </a>
                 <p><?php echo e(limit($article->subtitle, 80)); ?></p>
             </div>
         </footer>

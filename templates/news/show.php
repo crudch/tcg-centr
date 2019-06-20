@@ -18,6 +18,9 @@
                 <h2><?php echo e($article->title); ?></h2>
                 <?php echo $article->body; ?>
             </div>
+            <div class="news__link-container">
+                <a class="news__back" href="<?php echo url('/news'); ?>">Все новости</a>
+            </div>
         </div>
     </section>
 <?php $this->stop(); ?>

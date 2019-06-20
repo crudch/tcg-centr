@@ -40,7 +40,7 @@
                     <p class="center">Правление ТСЖ «Центральное»</p>
                 </div>
             </div>
-            <a href="/documents/itogi_golos_po_kaprem.pdf" class="pdf-link">Итоги голосования по капитальному ремонту</a>
+            <a href="/documents/itogi_golos_po_kaprem.pdf" target="_blank" class="pdf-link">Итоги голосования по капремонту<p class="pdf-size">PDF</p></a>
             <div class="spoiler-wrap">
                 <div class="spoiler-head folded">
                     <p>Выписка из протокола №2/2017 ТСЖ</p>

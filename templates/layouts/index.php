@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <style>
         @media only screen and (max-width: 1200px) {
+            .navigation__menu {
+                width: 60% !important;
+            }
+
             .navigation__menu a {
                 padding: 15px;
                 border-bottom: solid 1px #000;
+                padding-left: 0 !important;
             }
         }
     </style>

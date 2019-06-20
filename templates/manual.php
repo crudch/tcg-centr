@@ -609,8 +609,8 @@
                 </div>
             </div>
         </div>
-        <a href="/documents/pravila_predostavleniya_kom_uslug_po_354_post.pdf" target="_blank" class="pdf-link">Правила предоставления ком. услуг по 354 пост.</a>
-        <a href="/documents/normativy_na_xvs,gvs-131_pk.pdf" target="_blank" class="pdf-link">Нормативы на ХВС, ГВС-131 ПК</a>
+        <a href="/documents/pravila_predostavleniya_kom_uslug_po_354_post.pdf" target="_blank" class="pdf-link">Правила предоставления ком. услуг по 354 пост.<p class="pdf-size">PDF</p></a>
+        <a href="/documents/normativy_na_xvs,gvs-131_pk.pdf" target="_blank" class="pdf-link">Нормативы на ХВС, ГВС-131 ПК<p class="pdf-size">PDF</p></a>
     </div>
 </section>
 <?php $this->stop(); ?>

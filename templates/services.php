@@ -14,115 +14,115 @@
     <div class="services__block">
         <h1>Услуги</h1>
         <p>Перечень обязательных работ и услуг по содержанию и текущему ремонту общего имущества многоквартирного жилого дома по адресу: г. Екатеринбург, ул. 8 Марта, д.7.</p>
-        <div class="service__table-container">
-            <table class="services__table">
+        <div class="table-wrap">
+            <table>
                 <thead>
-                <tr class="services__table-headers">
-                    <th class="services__table-item">№ п/п</th>
-                    <th class="services__table-item">Наименование работ и услуг</th>
-                    <th class="services__table-item">Периодичность</th>
+                <tr>
+                    <th>№ п/п</th>
+                    <th>Наименование работ и услуг</th>
+                    <th>Периодичность</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">1.</td>
-                    <td class="services__table-item">Мытье полов лестничных клеток, влажная уборка подоконников и перил</td>
-                    <td class="services__table-item">1 раз в месяц</td>
+                <tr>
+                    <td data-label="№ п/п">1.</td>
+                    <td data-label="Наименование работ и услуг">Мытье полов лестничных клеток, влажная уборка подоконников и перил</td>
+                    <td data-label="Периодичность">1 раз в месяц</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">2.</td>
-                    <td class="services__table-item">Мытье окон лестничных клеток, влажная уборка стен (генеральная уборка)</td>
-                    <td class="services__table-item">2 раза в год</td>
+                <tr>
+                    <td data-label="№ п/п">2.</td>
+                    <td data-label="Наименование работ и услуг">Мытье окон лестничных клеток, влажная уборка стен (генеральная уборка)</td>
+                    <td data-label="Периодичность">2 раза в год</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">3.</td>
-                    <td class="services__table-item">Уборка земельного участка в летний период (подметание)</td>
-                    <td class="services__table-item">6 раз в неделю</td>
+                <tr>
+                    <td data-label="№ п/п">3.</td>
+                    <td data-label="Наименование работ и услуг">Уборка земельного участка в летний период (подметание)</td>
+                    <td data-label="Периодичность">6 раз в неделю</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">4.</td>
-                    <td class="services__table-item">Уборка мусора на контейнерных площадках</td>
-                    <td class="services__table-item">7 раз в неделю</td>
+                <tr>
+                    <td data-label="№ п/п">4.</td>
+                    <td data-label="Наименование работ и услуг">Уборка мусора на контейнерных площадках</td>
+                    <td data-label="Периодичность">7 раз в неделю</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">5.</td>
-                    <td class="services__table-item">Сдвижка и подметание снега при отсутствии снегопадов</td>
-                    <td class="services__table-item">5 раз в неделю</td>
+                <tr>
+                    <td data-label="№ п/п">5.</td>
+                    <td data-label="Наименование работ и услуг">Сдвижка и подметание снега при отсутствии снегопадов</td>
+                    <td data-label="Периодичность">5 раз в неделю</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">6.</td>
-                    <td class="services__table-item">Сдвижка и подметание снега при снегопаде</td>
-                    <td class="services__table-item">По мере необходимости</td>
+                <tr>
+                    <td data-label="№ п/п">6.</td>
+                    <td data-label="Наименование работ и услуг">Сдвижка и подметание снега при снегопаде</td>
+                    <td data-label="Периодичность">По мере необходимости</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">7.</td>
-                    <td class="services__table-item">Вывоз твердых бытовых отходов</td>
-                    <td class="services__table-item">7 раз в неделю</td>
+                <tr>
+                    <td data-label="№ п/п">7.</td>
+                    <td data-label="Наименование работ и услуг">Вывоз твердых бытовых отходов</td>
+                    <td data-label="Периодичность">7 раз в неделю</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">8.</td>
-                    <td class="services__table-item">Уборка мусора с газонов, очистка урн</td>
-                    <td class="services__table-item">6 раз в неделю</td>
+                <tr>
+                    <td data-label="№ п/п">8.</td>
+                    <td data-label="Наименование работ и услуг">Уборка мусора с газонов, очистка урн</td>
+                    <td data-label="Периодичность">6 раз в неделю</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">9.</td>
-                    <td class="services__table-item">Укрепление водосточных труб колен и воронок</td>
-                    <td class="services__table-item">2 раза в год</td>
+                <tr>
+                    <td data-label="№ п/п">9.</td>
+                    <td data-label="Наименование работ и услуг">Укрепление водосточных труб колен и воронок</td>
+                    <td data-label="Периодичность">2 раза в год</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">10.</td>
-                    <td class="services__table-item">Консервация системы центрального отопления, ремонт</td>
-                    <td class="services__table-item">2 раза в год</td>
+                <tr>
+                    <td data-label="№ п/п">10.</td>
+                    <td data-label="Наименование работ и услуг">Консервация системы центрального отопления, ремонт</td>
+                    <td data-label="Периодичность">2 раза в год</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">11.</td>
-                    <td class="services__table-item">Замена разбитых стекол окон общего помещения</td>
-                    <td class="services__table-item">По мере необходитмости</td>
+                <tr>
+                    <td data-label="№ п/п">11.</td>
+                    <td data-label="Наименование работ и услуг">Замена разбитых стекол окон общего помещения</td>
+                    <td data-label="Периодичность">По мере необходитмости</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">12.</td>
-                    <td class="services__table-item">Ремонт, регулировка, промывка, испытание, расконсервирование систем центрального отопления, прочистка дымовентиляционных каналов, проверка и ремонт продухов в цоколях здания, утепление чердачных перекрытий, трубопроводов в чердачных и подвальных помещениях, осмотр кровли</td>
-                    <td class="services__table-item">1 раз в год</td>
+                <tr>
+                    <td data-label="№ п/п">12.</td>
+                    <td data-label="Наименование работ и услуг">Ремонт, регулировка, промывка, испытание, расконсервирование систем центрального отопления, прочистка дымовентиляционных каналов, проверка и ремонт продухов в цоколях здания, утепление чердачных перекрытий, трубопроводов в чердачных и подвальных помещениях, осмотр кровли</td>
+                    <td data-label="Периодичность">1 раз в год</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">13.</td>
-                    <td class="services__table-item">Проведение технических осмотров и устранение незначительных неисправностей в системах вентиляции, дымоудаления, электротехнических устройств</td>
-                    <td class="services__table-item">Проверка исправности канализационных вытяжек 1 раз в год. Проверка наличия тяги в дымовентиляционных каналах 1 раз в год. Проверка заземления оболочки электрокабеля. Замеры сопротивления изоляции проводов 1 раз в год</td>
+                <tr>
+                    <td data-label="№ п/п">13.</td>
+                    <td data-label="Наименование работ и услуг">Проведение технических осмотров и устранение незначительных неисправностей в системах вентиляции, дымоудаления, электротехнических устройств</td>
+                    <td data-label="Периодичность">Проверка исправности канализационных вытяжек 1 раз в год. Проверка наличия тяги в дымовентиляционных каналах 1 раз в год. Проверка заземления оболочки электрокабеля. Замеры сопротивления изоляции проводов 1 раз в год</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">14.</td>
-                    <td class="services__table-item">Проведение технических осмотров и устранение незначительных неисправностей в системах канализации, ХВС, ГВС и отопления</td>
-                    <td class="services__table-item">1 раз в год</td>
+                <tr>
+                    <td data-label="№ п/п">14.</td>
+                    <td data-label="Наименование работ и услуг">Проведение технических осмотров и устранение незначительных неисправностей в системах канализации, ХВС, ГВС и отопления</td>
+                    <td data-label="Периодичность">1 раз в год</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">15.</td>
-                    <td class="services__table-item">Осмотр противопожарной системы</td>
-                    <td class="services__table-item">1 раз в год</td>
+                <tr>
+                    <td data-label="№ п/п">15.</td>
+                    <td data-label="Наименование работ и услуг">Осмотр противопожарной системы</td>
+                    <td data-label="Периодичность">1 раз в год</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">16.</td>
-                    <td class="services__table-item">Аварийное обслуживание</td>
-                    <td class="services__table-item">Постоянно на системах водоснабжения, теплоснабжения, газоснабжения, канализации, энергоснабжения</td>
+                <tr>
+                    <td data-label="№ п/п">16.</td>
+                    <td data-label="Наименование работ и услуг">Аварийное обслуживание</td>
+                    <td data-label="Периодичность">Постоянно на системах водоснабжения, теплоснабжения, газоснабжения, канализации, энергоснабжения</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">17.</td>
-                    <td class="services__table-item">Дератизация, дезинсекция</td>
-                    <td class="services__table-item">По мере необходимости</td>
+                <tr>
+                   <td data-label="№ п/п">17.</td>
+                   <td data-label="Наименование работ и услуг">Дератизация, дезинсекция</td>
+                   <td data-label="Периодичность">По мере необходимости</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">18.</td>
-                    <td class="services__table-item">Текущий ремонт, по результатам технического осмотра дома и подготовке его к сезонной эксплуатации</td>
-                    <td class="services__table-item">По мере необходимости</td>
+                <tr>
+                    <td data-label="№ п/п">18.</td>
+                    <td data-label="Наименование работ и услуг">Текущий ремонт, по результатам технического осмотра дома и подготовке его к сезонной эксплуатации</td>
+                    <td data-label="Периодичность">По мере необходимости</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">19.</td>
-                    <td class="services__table-item">Ремонт малых форм, завоз песка в песочницы,  озеленения</td>
-                    <td class="services__table-item">По мере необходимости</td>
+                <tr>
+                    <td data-label="№ п/п">19.</td>
+                    <td data-label="Наименование работ и услуг">Ремонт малых форм, завоз песка в песочницы,  озеленения</td>
+                    <td data-label="Периодичность">По мере необходимости</td>
                 </tr>
-                <tr class="services__table-rows">
-                    <td class="services__table-item">20.</td>
-                    <td class="services__table-item">Очистка кровли от снега</td>
-                    <td class="services__table-item">По мере необходимости</td>
+                <tr>
+                    <td data-label="№ п/п">20.</td>
+                    <td data-label="Наименование работ и услуг">Очистка кровли от снега</td>
+                    <td data-label="Периодичность">По мере необходимости</td>
                 </tr>
                 </tbody>
             </table>

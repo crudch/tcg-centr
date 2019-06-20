@@ -19,7 +19,7 @@
                 <div class="news__item">
                     <p><?php echo $article->datePublish(); ?></p>
                     <a href="<?php echo url('/news/' . $article->id); ?>">
-                        <h2><?php echo e($article->title); ?></h2>
+                        <h2 class="news__h2"><?php echo e($article->title); ?></h2>
                     </a>
                     <p><?php echo e($article->subtitle); ?></p>
                 </div>
